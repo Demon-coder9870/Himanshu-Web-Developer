@@ -117,7 +117,7 @@ export default function About() {
                 <div key={edu.id} className="glass-card p-8 rounded-2xl relative overflow-hidden group">
                   <div className="absolute top-0 right-0 w-24 h-24 bg-accent-primary/5 rounded-bl-[5rem] transition-all duration-500 group-hover:w-32 group-hover:h-32" />
                   <span className="text-accent-primary font-bold text-sm mb-2 block">{edu.duration}</span>
-                  <h4 className="text-xl font-bold text-white mb-2">{edu.degree || edu.qualification}</h4>
+                  <h4 className="text-xl font-bold text-white mb-2">{edu.degree}</h4>
                   <p className="text-slate-400 font-medium mb-1">{edu.institution}</p>
                   <p className="text-slate-500 text-sm">{edu.field}</p>
                 </div>

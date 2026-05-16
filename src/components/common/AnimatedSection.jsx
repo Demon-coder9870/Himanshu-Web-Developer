@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const AnimatedSection = ({ children, className, delay = 0, id }) => {
+const AnimatedSection = ({ children, className = '', delay = 0, id = '' }) => {
   return (
     <motion.section
       id={id}

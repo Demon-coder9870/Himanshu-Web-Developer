@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { profile } from '@/pages/index';
 
-const SEO = ({ title, description, image, url }) => {
+const SEO = ({ title = '', description = '', image = '', url = '' }) => {
   const pageTitle = title ? `${title} | ${profile.name}` : profile.name;
   const pageDescription = description || profile.summary;
   const pageImage = image || '/og-image.png';

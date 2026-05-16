@@ -49,7 +49,7 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center gap-4">
             {navLinks.map((link) => (
-              <MagneticButton key={link.path}>
+              <MagneticButton key={link.path} className="">
                 <Link 
                   href={link.path}
                   className={`px-4 py-2 text-[13px] font-bold uppercase tracking-widest transition-all duration-300 hover:text-accent-primary relative group ${
