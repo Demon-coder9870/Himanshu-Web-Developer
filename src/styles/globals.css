@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #0a0a0a;
+  --color-dark-lighter: #1a1a1a;
+  --color-dark-card: rgba(26, 26, 26, 0.6);
+  
+  --color-accent-primary: #00f2ff;
+  --color-accent-secondary: #7000ff;
+  --color-accent-tertiary: #10b981;
+
+  --animate-blob: blob 7s infinite;
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-gradient-flow: gradient-flow 5s linear infinite;
+
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes gradient-flow {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+}
+
+@utility animation-delay-* {
+  animation-delay: --value(integer);
+}
+
+@utility animation-delay-2000 {
+  animation-delay: 2000ms;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-slate-200 selection:bg-accent-primary/30;
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-dark-lighter/50 backdrop-blur-xl border border-white/10 hover:border-accent-primary/30 transition-all duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary bg-[length:200%_auto] animate-gradient-flow;
+  }
+
+  .neon-glow {
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.5), 0 0 20px rgba(0, 242, 255, 0.3);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+  }
+}
+
+
+
+/* Swiper Styles */
+.swiper-pagination-bullet {
+  @apply !bg-white/30;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-accent-primary;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  @apply w-5 h-5 fixed pointer-events-none z-[9999] transition-transform duration-100 mix-blend-screen rounded-full;
+  background: rgba(0, 242, 255, 0.5);
+}
+
+.custom-cursor-follower {
+  @apply w-10 h-10 border border-accent-primary/30 fixed pointer-events-none z-[9998] transition-transform duration-150 rounded-full;
+}
