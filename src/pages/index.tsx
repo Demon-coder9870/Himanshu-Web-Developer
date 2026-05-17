@@ -15,7 +15,7 @@ import { projects } from './projects/index';
 import { services } from './services';
 
 export const profile = {
-  name: "himanshucodelab",
+  name: "Himanshu CodeLab",
   role: "Senior Web Developer",
   title: "Full-Stack Specialist & UI/UX Expert",
   location: "Dehradun, Uttarakhand, India",
@@ -23,7 +23,7 @@ export const profile = {
   phone: "+91 94105 93344",
   company: "Applaud Web Media Pvt. Ltd.",
   education: "Shri Guru Ram Rai Institute Of Technology & Science",
-  summary: "himanshucodelab is a Senior Web Developer with 5+ years of experience in crafting high-performance, SEO-optimized, and user-centric web applications. Based in Dehradun, he specializes in the MERN stack (MongoDB, Express, React, Node.js), Next.js, and advanced WordPress development. He has a proven track record of delivering over 50+ successful projects, ranging from complex enterprise dashboards to high-conversion landing pages. His approach combines technical excellence with a deep understanding of UI/UX principles to drive business growth and user engagement.",
+  summary: "Himanshu CodeLab is a Senior Web Developer with 5+ years of experience in crafting high-performance, SEO-optimized, and user-centric web applications. Based in Dehradun, he specializes in the MERN stack (MongoDB, Express, React, Node.js), Next.js, and advanced WordPress development. He has a proven track record of delivering over 50+ successful projects, ranging from complex enterprise dashboards to high-conversion landing pages. His approach combines technical excellence with a deep understanding of UI/UX principles to drive business growth and user engagement.",
   socials: {
     linkedin: "https://linkedin.com/",
     twitter: "https://twitter.com/",
