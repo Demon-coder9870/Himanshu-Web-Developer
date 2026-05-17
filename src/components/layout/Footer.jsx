@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-6">
             <Link href="/" className="text-3xl font-bold text-white tracking-tighter">
-              Himanshu<span className="text-accent-primary">.dev</span>
+              himanshu<span className="text-accent-primary">codelab</span>
             </Link>
             <p className="text-slate-400 leading-relaxed">
               Senior Web Developer specializing in building exceptional digital experiences that are fast, accessible, and visually stunning.
@@ -104,7 +104,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} Himanshu.dev. All rights reserved.
+            © {new Date().getFullYear()} himanshucodelab. All rights reserved.
           </p>
           <button
             onClick={scrollToTop}
