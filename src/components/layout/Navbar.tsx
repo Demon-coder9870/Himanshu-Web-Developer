@@ -43,7 +43,9 @@ const Navbar = () => {
     >
       <Container>
         <div className="flex items-center justify-between">
+          <Link href="/" className="text-3xl font-bold text-white tracking-tighter group">
             Himanshu <span className="text-accent-primary group-hover:text-white transition-colors">CodeLab</span>
+          </Link>
 
           <div className="hidden lg:flex items-center gap-4">
             {navLinks.map((link) => (
