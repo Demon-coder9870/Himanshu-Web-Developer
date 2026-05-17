@@ -28,10 +28,10 @@ export default function Contact() {
     },
     { 
       icon: Phone, 
-      label: 'Phone', 
+      label: 'WhatsApp', 
       value: profile.phone, 
-      sub: 'Call me for quick inquiries.',
-      href: `tel:${profile.phone}`,
+      sub: 'Message me on WhatsApp.',
+      href: `https://wa.me/919410593344`,
       color: 'accent-primary'
     },
     { 

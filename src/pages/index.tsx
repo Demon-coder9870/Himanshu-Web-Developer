@@ -19,7 +19,7 @@ export const profile = {
   role: "Senior Web Developer",
   title: "Full-Stack Specialist & UI/UX Expert",
   location: "Dehradun, Uttarakhand, India",
-  email: "himanshuwebdeveloper@gmail.com",
+  email: "himanshuwebdevelopers@gmail.com",
   phone: "+91 94105 93344",
   company: "Applaud Web Media Pvt. Ltd.",
   education: "Shri Guru Ram Rai Institute Of Technology & Science",
