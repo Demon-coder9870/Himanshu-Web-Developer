@@ -54,13 +54,13 @@ export default function About() {
           >
             <div className="aspect-square rounded-[3rem] bg-gradient-to-br from-accent-primary/20 to-accent-secondary/20 relative overflow-hidden p-12">
                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10" />
-               <div className="w-full h-full border-4 border-white/10 rounded-[2rem] flex items-center justify-center text-9xl font-black text-white/5">
-                HV
+               <div className="w-full h-full border-4 border-white/10 rounded-[2rem] flex items-center justify-center overflow-hidden">
+                 <img src="/profile.jpeg" alt="Himanshu Verma" className="object-cover w-full h-full" />
                </div>
             </div>
             {/* Experience Badge */}
-            <div className="absolute -bottom-10 -right-10 glass-card p-10 rounded-3xl">
-               <span className="text-6xl font-black text-accent-primary block mb-2">5+</span>
+            <div className="absolute bottom-4 right-4 z-20 glass-card p-6 md:p-8 rounded-3xl">
+               <span className="text-5xl md:text-6xl font-black text-accent-primary block mb-2">5+</span>
                <span className="text-slate-400 font-bold uppercase tracking-[0.2em] text-xs">Years of Experience</span>
             </div>
           </motion.div>

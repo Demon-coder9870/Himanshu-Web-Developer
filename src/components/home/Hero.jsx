@@ -133,8 +133,8 @@ const Hero = () => {
                 </div>
                 
                 <div className="relative z-10 text-center">
-                    <div className="w-40 h-40 rounded-full bg-dark border-4 border-accent-primary flex items-center justify-center text-5xl font-bold mb-6 mx-auto group-hover:scale-110 transition-transform duration-500 shadow-neon">
-                        HV
+                    <div className="w-40 h-40 rounded-full bg-dark border-4 border-accent-primary flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-500 shadow-neon overflow-hidden">
+                        <Image src="/profile.jpeg" alt={profile.name} width={160} height={160} className="object-cover w-full h-full" />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-2">{profile.name}</h3>
                     <p className="text-accent-primary font-medium tracking-widest uppercase text-xs">Senior Web Dev</p>

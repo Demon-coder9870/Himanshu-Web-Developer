@@ -126,11 +126,11 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-accent-primary/20 to-accent-secondary/20 flex items-center justify-center p-8 overflow-hidden group">
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20" />
-                <div className="relative z-10 w-full h-full border-2 border-white/5 rounded-2xl flex items-center justify-center text-8xl font-black text-white/5 group-hover:scale-110 transition-transform duration-700">
-                  HV
+                <div className="relative z-10 w-full h-full border-2 border-white/5 rounded-2xl flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-700">
+                  <img src="/profile.jpeg" alt={profile.name} className="object-cover w-full h-full" />
                 </div>
               </div>
-              <div className="absolute -bottom-10 -right-10 glass-card p-8 rounded-3xl hidden md:block">
+              <div className="absolute bottom-4 right-4 z-20 glass-card p-6 md:p-8 rounded-3xl">
                 <p className="text-accent-primary font-bold text-4xl mb-1">5+</p>
                 <p className="text-slate-400 text-sm font-bold uppercase tracking-widest">Years of Excellence</p>
               </div>
