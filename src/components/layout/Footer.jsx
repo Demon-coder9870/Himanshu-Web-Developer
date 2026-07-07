@@ -89,7 +89,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-4">
                 <Phone className="text-accent-primary shrink-0" size={20} />
-                <a href={`https://wa.me/919410593344`} className="text-slate-400 hover:text-white transition-colors">
+                <a href={`https://wa.me/919870905707`} className="text-slate-400 hover:text-white transition-colors">
                   {profile.phone}
                 </a>
               </li>

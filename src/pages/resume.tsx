@@ -129,7 +129,7 @@ interface HeaderInfo {
 export default function Resume() {
   const headerInfo: HeaderInfo[] = [
     { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
-    { icon: Phone, label: 'WhatsApp', value: profile.phone, href: `https://wa.me/919410593344` },
+    { icon: Phone, label: 'WhatsApp', value: profile.phone, href: `https://wa.me/919870905707` },
     { icon: MapPin, label: 'Location', value: profile.location },
     { icon: Briefcase, label: 'Current Role', value: profile.title },
   ];

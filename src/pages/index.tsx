@@ -19,7 +19,7 @@ export const profile = {
   title: "Full-Stack Specialist & UI/UX Expert",
   location: "Dehradun, Uttarakhand, India",
   email: "himanshuwebdevelopers@gmail.com",
-  phone: "+91 94105 93344",
+  phone: "+91 98709 05707",
   company: "Applaud Web Media Pvt. Ltd.",
   education: "Shri Guru Ram Rai Institute Of Technology & Science",
   summary: "I am a Senior Web Developer with 5+ years of experience in crafting high-performance, SEO-optimized, and user-centric web applications. Based in Dehradun, I specialize in the MERN stack (MongoDB, Express, React, Node.js), Next.js, and advanced WordPress development. I have a proven track record of delivering over 50+ successful projects, ranging from complex enterprise dashboards to high-conversion landing pages. My approach combines technical excellence with a deep understanding of UI/UX principles to drive business growth and user engagement.",

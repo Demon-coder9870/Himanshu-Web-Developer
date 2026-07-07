@@ -31,7 +31,7 @@ export default function Contact() {
       label: 'WhatsApp', 
       value: profile.phone, 
       sub: 'Message me on WhatsApp.',
-      href: `https://wa.me/919410593344`,
+      href: `https://wa.me/919870905707`,
       color: 'accent-primary'
     },
     { 
