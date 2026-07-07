@@ -60,76 +60,80 @@ export default function Contact() {
           subtitle="Get In Touch" 
         />
 
-        <div className="grid lg:grid-cols-5 gap-16 mt-20">
-          {/* Contact Info Sidebar */}
-          <div className="lg:col-span-2 space-y-10">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.1 }}
-              className="space-y-6"
-            >
-              <h3 className="text-3xl font-bold text-white">Contact Information</h3>
-              <p className="text-slate-400 text-lg leading-relaxed">
-                Have a project in mind or just want to say hi? I'd love to hear from you. Feel free to reach out through the form or my social channels.
-              </p>
-            </motion.div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 mt-16 lg:mt-24 items-center">
+          {/* Contact Info Side */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.1 }}
+            className="relative p-8 sm:p-10 lg:p-14 rounded-[3rem] overflow-hidden group border border-white/5"
+          >
+            {/* Background effects */}
+            <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/20 via-accent-secondary/10 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="absolute inset-0 bg-dark/40 backdrop-blur-md" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-accent-primary/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
+            
+            <div className="relative z-10 space-y-12">
+              <div className="space-y-4">
+                <h3 className="text-4xl lg:text-5xl font-bold text-white tracking-tight">Let's Talk</h3>
+                <p className="text-slate-300 text-lg leading-relaxed max-w-md">
+                  Have a project in mind or just want to say hi? I'd love to hear from you. Feel free to reach out through the form or my social channels.
+                </p>
+              </div>
 
-            <div className="space-y-6">
-              {contactItems.map((item, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 + i * 0.1 }}
-                  className="glass-card p-8 rounded-3xl group hover:border-accent-primary/30 transition-all duration-300"
-                >
-                  <div className="flex items-start gap-6">
-                    <div className={`w-14 h-14 rounded-2xl bg-${item.color}/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500`}>
-                      <item.icon size={28} className={`text-${item.color}`} />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                {contactItems.map((item, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 + i * 0.1 }}
+                    className="flex flex-col gap-4 p-5 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-accent-primary/50 transition-all duration-300 group/card"
+                  >
+                    <div className={`w-12 h-12 rounded-2xl bg-${item.color}/20 flex items-center justify-center shrink-0 group-hover/card:scale-110 group-hover/card:rotate-3 transition-all duration-500`}>
+                      <item.icon size={24} className={`text-${item.color}`} />
                     </div>
                     <div>
-                      <p className="text-slate-500 text-xs font-bold uppercase tracking-[0.2em] mb-2">{item.label}</p>
+                      <p className="text-slate-400 text-[11px] font-bold uppercase tracking-wider mb-1">{item.label}</p>
                       {item.href ? (
-                        <a href={item.href} className="text-xl font-bold text-white hover:text-accent-primary transition-colors">{item.value}</a>
+                        <a href={item.href} className="text-base sm:text-lg font-bold text-white hover:text-accent-primary transition-colors block truncate">{item.value}</a>
                       ) : (
-                        <p className="text-xl font-bold text-white">{item.value}</p>
+                        <p className="text-base sm:text-lg font-bold text-white truncate">{item.value}</p>
                       )}
-                      <p className="text-slate-400 text-sm mt-1">{item.sub}</p>
                     </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            <div className="pt-10">
-              <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Follow My Socials</h4>
-              <div className="flex gap-4">
-                {[
-                  { Icon: Linkedin, href: profile.socials.linkedin },
-                  { Icon: Twitter, href: profile.socials.twitter },
-                  { Icon: Instagram, href: profile.socials.instagram },
-                ].map(({ Icon, href }, i) => (
-                  <a
-                    key={i}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-4 rounded-2xl bg-white/5 hover:bg-accent-primary hover:text-dark transition-all duration-500"
-                  >
-                    <Icon size={24} />
-                  </a>
+                  </motion.div>
                 ))}
               </div>
+
+              <div className="pt-4">
+                <h4 className="text-slate-400 font-bold mb-5 uppercase tracking-widest text-[11px]">Follow My Socials</h4>
+                <div className="flex gap-4">
+                  {[
+                    { Icon: Linkedin, href: profile.socials.linkedin },
+                    { Icon: Twitter, href: profile.socials.twitter },
+                    { Icon: Instagram, href: profile.socials.instagram },
+                  ].map(({ Icon, href }, i) => (
+                    <a
+                      key={i}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white hover:bg-accent-primary hover:text-dark hover:-translate-y-1 transition-all duration-500"
+                    >
+                      <Icon size={20} />
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Form Area */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="lg:col-span-3"
+            className="lg:pl-6 xl:pl-10"
           >
             <ContactForm />
           </motion.div>

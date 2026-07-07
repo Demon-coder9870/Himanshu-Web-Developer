@@ -51,7 +51,9 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="glass-card p-6 md:p-8 rounded-3xl space-y-6">
+    <form onSubmit={handleSubmit} className="bg-dark-lighter/30 backdrop-blur-xl border border-white/5 p-8 md:p-10 rounded-[2.5rem] space-y-7 relative group/form">
+      {/* Subtle glow behind form */}
+      <div className="absolute inset-0 bg-accent-primary/5 rounded-[2.5rem] blur-xl opacity-0 group-hover/form:opacity-100 transition-opacity duration-700 pointer-events-none" />
       <div className="space-y-2">
         <label htmlFor="name" className="text-sm font-bold text-slate-300 capitalize tracking-wide ml-1">
           Full Name
@@ -63,7 +65,7 @@ const ContactForm = () => {
           required
           value={formData.name}
           onChange={handleChange}
-          className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-3 text-white focus:outline-none focus:border-accent-primary transition-colors text-sm"
+          className="w-full bg-dark/50 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-accent-primary focus:bg-white/5 focus:shadow-[0_0_20px_rgba(0,242,255,0.15)] transition-all duration-300 text-sm"
           placeholder="John Doe"
         />
       </div>
@@ -79,7 +81,7 @@ const ContactForm = () => {
           required
           value={formData.email}
           onChange={handleChange}
-          className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-3 text-white focus:outline-none focus:border-accent-primary transition-colors text-sm"
+          className="w-full bg-dark/50 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-accent-primary focus:bg-white/5 focus:shadow-[0_0_20px_rgba(0,242,255,0.15)] transition-all duration-300 text-sm"
           placeholder="john@example.com"
         />
       </div>
@@ -95,7 +97,7 @@ const ContactForm = () => {
             required
             value={formData.service}
             onChange={handleChange}
-            className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-3 text-white focus:outline-none focus:border-accent-primary transition-colors appearance-none text-sm"
+            className="w-full bg-dark/50 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-accent-primary focus:bg-white/5 focus:shadow-[0_0_20px_rgba(0,242,255,0.15)] transition-all duration-300 appearance-none text-sm"
           >
             <option value="" disabled className="bg-dark text-slate-500">Select a service</option>
             {services.map((service) => (
@@ -120,7 +122,7 @@ const ContactForm = () => {
           required
           value={formData.subject}
           onChange={handleChange}
-          className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-3 text-white focus:outline-none focus:border-accent-primary transition-colors text-sm"
+          className="w-full bg-dark/50 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-accent-primary focus:bg-white/5 focus:shadow-[0_0_20px_rgba(0,242,255,0.15)] transition-all duration-300 text-sm"
           placeholder="How can I help you?"
         />
       </div>
@@ -136,7 +138,7 @@ const ContactForm = () => {
           rows={5}
           value={formData.message}
           onChange={handleChange}
-          className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-3 text-white focus:outline-none focus:border-accent-primary transition-colors resize-none text-sm"
+          className="w-full bg-dark/50 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-accent-primary focus:bg-white/5 focus:shadow-[0_0_20px_rgba(0,242,255,0.15)] transition-all duration-300 resize-none text-sm"
           placeholder="Tell me about your project..."
         />
       </div>
