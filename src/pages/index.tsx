@@ -9,13 +9,12 @@ import Button from '@/components/common/Button';
 import Hero from '@/components/home/Hero';
 import StatCard from '@/components/home/StatCard';
 import ProjectSlider from '@/components/sliders/ProjectSlider';
-import TestimonialSlider from '@/components/sliders/TestimonialSlider';
 import ServiceCard from '@/components/cards/ServiceCard';
 import { projects } from './projects/index';
 import { services } from './services';
 
 export const profile = {
-  name: "Himanshu CodeLab",
+  name: "Himanshu Verma",
   role: "Senior Web Developer",
   title: "Full-Stack Specialist & UI/UX Expert",
   location: "Dehradun, Uttarakhand, India",
@@ -23,7 +22,7 @@ export const profile = {
   phone: "+91 94105 93344",
   company: "Applaud Web Media Pvt. Ltd.",
   education: "Shri Guru Ram Rai Institute Of Technology & Science",
-  summary: "Himanshu CodeLab is a Senior Web Developer with 5+ years of experience in crafting high-performance, SEO-optimized, and user-centric web applications. Based in Dehradun, he specializes in the MERN stack (MongoDB, Express, React, Node.js), Next.js, and advanced WordPress development. He has a proven track record of delivering over 50+ successful projects, ranging from complex enterprise dashboards to high-conversion landing pages. His approach combines technical excellence with a deep understanding of UI/UX principles to drive business growth and user engagement.",
+  summary: "I am a Senior Web Developer with 5+ years of experience in crafting high-performance, SEO-optimized, and user-centric web applications. Based in Dehradun, I specialize in the MERN stack (MongoDB, Express, React, Node.js), Next.js, and advanced WordPress development. I have a proven track record of delivering over 50+ successful projects, ranging from complex enterprise dashboards to high-conversion landing pages. My approach combines technical excellence with a deep understanding of UI/UX principles to drive business growth and user engagement.",
   socials: {
     linkedin: "https://linkedin.com/",
     twitter: "https://twitter.com/",
@@ -33,56 +32,6 @@ export const profile = {
   status: "Open for High-Impact Projects",
 };
 
-export const testimonials = [
-  {
-    id: 1,
-    name: "Vikram Malhotra",
-    role: "CEO, TechVeda Solutions",
-    rating: 5,
-    text: "Himanshu transformed our outdated portal into a lightning-fast Next.js application. Our page load time decreased by 60%, and our conversion rate saw a significant boost. His professional approach and technical depth are unmatched.",
-    avatar: "/testimonials/avatar1.jpg",
-  },
-  {
-    id: 2,
-    name: "Priya Sharma",
-    role: "Marketing Director, Bharat Digital",
-    rating: 5,
-    text: "Working with Himanshu was the best decision for our rebranding. He didn't just code; he provided valuable UI/UX insights that made our site much more intuitive. He is reliable, communicative, and truly an expert in React.",
-    avatar: "/testimonials/avatar2.jpg",
-  },
-  {
-    id: 3,
-    name: "Arjun Reddy",
-    role: "Founder, Indica E-com",
-    rating: 5,
-    text: "We needed a complex multi-vendor dashboard on a tight deadline. Himanshu not only met the deadline but delivered a bug-free, scalable solution. His knowledge of state management and API integration is top-notch.",
-    avatar: "/testimonials/avatar3.jpg",
-  },
-  {
-    id: 4,
-    name: "Anjali Gupta",
-    role: "Product Manager, Delhi Fintech",
-    rating: 5,
-    text: "The financial dashboard Himanshu built for us is a masterpiece of frontend engineering. It handles real-time data streams flawlessly. His attention to detail in data visualization and security is exactly what we were looking for.",
-    avatar: "/testimonials/avatar4.jpg",
-  },
-  {
-    id: 5,
-    name: "Sanjay Verma",
-    role: "Owner, Shimla Blooms",
-    rating: 5,
-    text: "I was struggling with my WordPress site for months before I found Himanshu. He cleaned up the code, optimized the speed, and added custom features that I thought were impossible. My sales have doubled since the relaunch!",
-    avatar: "/testimonials/avatar5.jpg",
-  },
-  {
-    id: 6,
-    name: "Mark Thompson",
-    role: "Marketing Manager, Peak Performance",
-    rating: 5,
-    text: "Himanshu is a wizard with landing pages. The high-converting page he designed for our latest campaign achieved a 25% conversion rate, which is far beyond the industry average. He's also great at SEO!",
-    avatar: "/testimonials/avatar6.jpg",
-  },
-];
 
 interface Stat {
   label: string;
@@ -269,19 +218,6 @@ export default function Home() {
                 </motion.div>
               ))}
             </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24 bg-dark-lighter/30">
-        <Container>
-          <SectionTitle 
-            title="What My Clients Say" 
-            subtitle="Testimonials" 
-          />
-          <div className="max-w-4xl mx-auto">
-            <TestimonialSlider testimonials={testimonials} />
           </div>
         </Container>
       </section>
